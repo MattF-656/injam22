@@ -10,7 +10,19 @@ import './HomeDashboard.css'
 import MatchModal from '../MatchModal/MatchModal';
 import DoughnutChart from '../DoughnutChart/DoughnutChart';
 
+import { myUserStoryData } from '../../functions/CRUD';
+
+const initialState = { id: '', user_story_id: '' };
+
 function HomeDashboard() {
+    const [formState, setFormState] = useState(initialState);
+    const [userStory, setUserStory] = useState([]);
+    const [userLevel, setUserLevel] = useState([]);
+  
+    function setInput(key, value) {
+      setFormState({ ...formState, [key]: value });
+    }
+    
   return (
     <div className='HomeDashboardParent'>
         <div className='stats-wrapper'>
