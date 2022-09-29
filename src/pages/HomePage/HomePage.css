@@ -1,0 +1,17 @@
+.HomeParent {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin-right: 20px;
+}
+    
+.SidebarContainer { grid-area: 1 / 1 / 6 / 2; }
+
+.DynamicContentContainer {
+    grid-area: 1 / 2 / 6 / 6;
+    /* margin: 20px; */
+    height: 100%;
+}

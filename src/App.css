@@ -1,38 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --travelersRed: #f50002;
+    --digitalRed: #e01719;
+    --darkRed: #af1214;
+    --carbon: #46494d;
+    --carbonLight: #b5b6b8;
+    --teal: #007395;
+    --tealLight: #99c7d5;
+    --mustard: #f5c318;
+    --kiwi: #c1d841;
+    --mint: #9acb96;
+    --plum: #a5004c;
+    --textColor: #fff;
+}
+
 .App {
-  text-align: center;
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    
+.Navbar { grid-area: 1 / 1 / 2 / 6; }
+.DynamicContent { grid-area: 2 / 1 / 6 / 6; }

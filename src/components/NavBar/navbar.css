@@ -1,0 +1,52 @@
+@import url('https:/cdn.travelers.com/fonts/2.1/allfonts.min.css');
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--carbonLight);
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+.Navbar a {
+    color: var(--travelersRed);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#nav li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+#nav li a:hover,
+#nav li a.active {
+    color: var(--travelersRed);
+}
+
+#nav li a:hover::after,
+#nav li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: var(--travelersRed);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}

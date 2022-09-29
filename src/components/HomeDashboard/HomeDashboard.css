@@ -1,0 +1,139 @@
+.HomeDashboardParent {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    position: relative;
+}
+
+/* -------------------------------------------- */
+    
+.HomeDashboardParent .stats-wrapper {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    justify-content: space-around;
+}
+
+.HomeDashboardParent .stats-wrapper .container {
+    width: 30%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #46494d;
+    border-bottom: 10px solid #f50002;
+}
+
+.HomeDashboardParent .stats-wrapper .container i {
+    color: #f50002;
+    font-size: 2.5em;
+    text-align: center;
+    height: 60px;
+}
+
+.HomeDashboardParent .stats-wrapper .container span.num {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.HomeDashboardParent .stats-wrapper .container span.text {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+/* -------------------------------------------- */
+
+.HomeDashboardParent .match-wrapper {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.HomeDashboardParent .match-wrapper .container {
+    width: 100%;
+    height: 100px;
+    margin: 19px;
+    background-color: #46494d;
+    display: flex;
+    border-radius: 15px;
+}
+
+.HomeDashboardParent .match-wrapper .container i {
+    color: #f50002;
+    text-align: center;
+    margin: auto;
+}
+
+.HomeDashboardParent .match-wrapper .container .text {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    height: 50px;
+    width: 50%;
+}
+
+.HomeDashboardParent .match-wrapper .container .text .US {
+    color: #99c7d5;
+    font-weight: 800;
+}
+
+.HomeDashboardParent .match-wrapper .container .text .team-name {
+    color: #99c7d5;
+    font-weight: 800;
+}
+
+/* -------------------------------------------- */
+
+.HomeDashboardParent .trending-wrapper {
+    grid-area: 3 / 1 / 4 / 2;
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+}
+
+.HomeDashboardParent .trending-wrapper .container {
+    width: 30%;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em 0;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #46494d;
+    margin: 20px;
+    /* border-bottom: 10px solid #f50002; */
+}
+
+.HomeDashboardParent .trending-wrapper .container img {
+    border-radius: 15px;
+}
